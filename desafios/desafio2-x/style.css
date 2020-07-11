@@ -13,10 +13,31 @@ body {
     height: 100vh;
     background: url(https://app.rocketseat.com.br/static/media/logo.0ae02df1.svg) no-repeat;
     background-size: 255px;
-    background-position: bottom 10px left 20px;
+    background-position: bottom 5px left 20px;
     background-color: #282a36;
     
 }
+
+.body {
+    background-image: url(https://rocketseat.com.br/static/images/update/bootcamp.svg);
+    background-position: bottom 115px left 20px;
+    background-size: 450px;
+}
+
+.body h1 {
+    font: Roboto;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+
+    width: 500px;
+
+    margin: 100px 600px;
+
+}
+
+
 header {
     width: 100%;
     height: 10%;
@@ -142,7 +163,9 @@ footer {
 /* ===CONTEUDOS=== */
 
 .bootcamps {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     align-items: center;
     justify-content: center;
     padding: 30px;
@@ -154,7 +177,7 @@ footer {
     padding: 30px 18px;
     margin: 0 20px;
 
-    height: 500px;
+    height: 470px;
     width: 337px;
 
     display: flex;
@@ -199,6 +222,7 @@ footer {
 .modal-overlay {
     position: fixed;
     top: 0;
+    left: 0;
     background: rgba(0, 0, 0, .7);
     width: 100vw;
     height: 100vh;
@@ -217,11 +241,14 @@ footer {
     background-color: rgba(77, 77, 77, 0.808);
 
     position: relative;
+    display: flex;
 }
 
 .modal.maximize {
     width: 100vw;
     height: 100vh;
+    position: fixed;
+    left: 0;
 }
 
 
